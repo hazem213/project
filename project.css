@@ -1,0 +1,305 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+}
+
+.logo img {
+    padding-top: 20px;
+    max-width: 200px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.4s;
+}
+
+.menu a:hover {
+    color: rgb(159, 12, 12);
+}
+
+.icon i {
+    font-size: 18px;
+    color: #000000;
+    padding: 10px 20px;
+    transition: all 0.4s;
+}
+
+.icon i:hover {
+    transform: scale(1.2);
+    color: rgb(159, 12, 12);
+}
+
+section {
+    padding: 5% 15%;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url("تصميم بدون عنوان (2).png");
+    background-size: cover;
+    background-position: right;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    background-color: #000000;
+
+}
+
+.home .text h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(159, 12, 12);
+}
+
+.home .text h1 {
+    font-size: 65px;
+    font-weight: 600;
+    margin: 10px;
+    color: white;
+}
+
+.home .text p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    border: 2px solid white;
+    padding: 10px 25px;
+    transition: all 0.4s;
+
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* PRODUCTS */
+.ctext h2 {
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.ctext span {
+    color: rgb(159, 12, 12);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+}
+
+.row {
+    position: relative;
+    transition: all 0.4s;
+}
+
+.row img {
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.row img:hover {
+    transform: scale(0.9);
+
+}
+
+.tproduct h5 {
+    font-size: 12px;
+    font-weight: 500;
+    background-color: green;
+    color: white;
+    position: absolute;
+    padding: 2px;
+    border-radius: 5px;
+    top: 0;
+}
+
+.staricon i {
+    color: goldenrod;
+}
+
+.hearticon {
+    position: absolute;
+    right: 0;
+}
+
+.hearticon:hover {
+    color: rgb(188, 12, 12);
+}
+
+.price h4 {
+    font-size: 16px;
+    color: #111111;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.price p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.look {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: rgb(205, 205, 20);
+    width: 100%;
+    justify-content: center;
+    height: 200px;
+}
+
+.look h2 {
+    padding-right: 50px;
+
+}
+
+.look a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: #000000;
+    border: 2px solid black;
+    box-sizing: border-box;
+    transition: all 0.4s;
+}
+
+.look a:hover {
+    transform: scale(1.1);
+}
+
+.textupdate h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    text-shadow: 50px 10px blur black;
+}
+
+.cart img {
+    width: 280px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.updatecart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    gap: 1rem;
+}
+
+.cart h5,
+.cart p {
+    color: gray;
+}
+
+.cart h4,
+.cart h6 {
+    padding: 4px 0;
+    color: #000000;
+    font-weight: 900;
+}
+
+.foot {
+    background-color: gray;
+    display: flex;
+    height: auto;
+}
+
+.foot h4 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.foot .social a {
+    margin: 10px;
+    color: #000000;
+    font-size: 20px;
+}
+
+.foot .copyright {
+    padding-left: 230px;
+    padding-top: 20px;
+    height: auto;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* responsive css */
+@media(max-width: 860) {
+    header {
+        padding: 20px 3%;
+        transition: 0.4s;
+    }
+}
+
+@media(max-width: 830px) {
+    .home .text h1 {
+        font-size: 40px;
+        transition: 0.4s;
+    }
+
+    .home .text p {
+        font-size: 10px;
+        transition: 0.4s;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        transition: 0.4s;
+    }
+}
+
+@media(max-width: 730px) {
+    .menu {
+        display: block;
+        padding: 10px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+}
+
+@media(max-width:660px) {
+    .btn {
+        background-color: #000000;
+        color: white;
+        border: 2px solid black;
+    }
+}
